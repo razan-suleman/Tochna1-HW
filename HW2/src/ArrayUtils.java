@@ -37,20 +37,7 @@ public class ArrayUtils {
     }
 
     public static int findShortestPath(int[][] m, int i, int j) {
-        int min_c = m.length;
-        for (int rows = i; rows < m.length; rows++) {
-            int c = 0;
-            int startCol = (rows == i ? j : 0);
-            int cols = m[rows].length;              
-            for (int col = startCol; col < cols; col++) {
-                if (m[rows][col] == 0)
-                    break;
-                if (rows == col && min_c > c)
-                    min_c = c;
-                c++;
-            }
-        }
-        return min_c;
+      
     }
 
 }
